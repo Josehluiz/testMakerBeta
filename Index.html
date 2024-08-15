@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test Maker</title>
+</head>
+<body>
+    <div class="container my-5">
+        <div class="d-flex align-items-center mb-4">
+            <img src="imagens/logo_teste_maker.png" alt="Logo Test Maker" class="me-3" style="width: 60px; height: 60px;">
+            <h1>Test Maker</h1>
+        </div>
+        <form id="contact-form">
+            <p class="lead">Bem vindo (nome da conta)! você já pode começar a criar seu formulário. Comece selecionando a matéria.</p>
+            <hr>
+            <div class="row my-4">
+                <div class="col-md-6">
+                    <h2>Tipo de arquivo</h2>
+                    <p class="file_desc">Selecione o tipo de arquivo e arraste o documento para a janela</p>
+                    <div class="d-flex justify-content-around border border-dashed p-3 rounded">
+                        <img src="imagens/pencil_icon.png" alt="icone de lapis" class="img-fluid" style="width: 2.5vw;">
+                        <img src="imagens/Play_icon.png" alt="icone de play" class="img-fluid" style="width: 2.5vw;">
+                        <img src="imagens/link_icon.png" alt="icone de link" class="img-fluid" style="width: 2.5vw;">
+                        <img src="imagens/clip_icon.png" alt="icone de clip" class="img-fluid" style="width: 2.5vw;">
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <h2>Tipo de questão</h2>
+                    <div class="p-3 border border-dashed rounded">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="multiple-choice" id="multiple-choice">
+                            <label class="form-check-label" for="multiple-choice">
+                                Múltipla escolha
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="short-answer" id="short-answer">
+                            <label class="form-check-label" for="short-answer">
+                                Resposta curta
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="paragraph" id="paragraph">
+                            <label class="form-check-label" for="paragraph">
+                                Parágrafo
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value="checkbox" id="checkbox1">
+                            <label class="form-check-label" for="checkbox1">
+                                Caixa de seleção
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dropzone">
+                <img src="imagens/drop_down_file_icon.png" alt="Drag and drop files here" style="width: 20vh; height: 20vh;">
+                <div class="drop_down_inst_container text-center mt-3">
+                    <h3>ARRASTE OS ARQUIVOS AQUI</h3>
+                    <p>Podem ser colocados aqui arquivos .PDF .PPTX</p>
+                </div>
+            </div>
+            <div class="row my-4">
+                <div class="col-md-8 mb-3 mt-5">
+                    <input type="text" id="exam-year" name="exam-year" class="form-control" placeholder="Para que ano se aplica a prova? (Define a dificuldade)">
+                </div>
+                <div class="col-md-4 text-center mt-2">
+                    <p>N° de questões</p>
+                    <div class="input-group">
+                        <button id="menos" type="button" class="btn btn-outline-secondary">-</button>
+                        <input type="text" class="form-control text-center" id="contagem" value="0" readonly>
+                        <button id="mais" type="button" class="btn btn-outline-secondary">+</button>
+                    </div>
+                </div>
+            </div>
+            <button id="generate" type="submit" class="btn btn-primary w-100">GERAR</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <a href="./prova.html">oioio</a>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-3pdEck5AfOMCxlLSHXM9QBuV7ak9eVVt7pgJGOF61rlCd6Z8KfO4F3v4F2nvZwpH" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body {
+    background-color: #191919;
+    font-family: 'Poppins', sans-serif;
+    color: #E0E0E0;
+}
+
+h1, h2 {
+    font-weight: 500;
+    color: #E0E0E0;
+}
+
+.file_desc p, .form-check-label, .drop_down_inst_container h3, .drop_down_inst_container p, .quantity_questions p {
+    font-size: 1.2rem;
+}
+
+.dropzone {
+    width: 100%;
+    height: 55vh;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #4E4E4E;
+    border-radius: 20px;
+}
+
+#generate {
+    background-color: #E3CDFE;
+    color: #202020;
+    font-size: 1.6rem;
+}
